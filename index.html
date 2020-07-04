@@ -12,102 +12,178 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<div class="jumbotron">
-    <h1>Hoteles</h1>
-</div>
+<!--navbar-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
+    <a class="navbar-brand" routerLink="/home">Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="container">
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <!--agregar items izquierda-->
+        <div class="navbar-nav ml-auto" id="CollapseExample">
+            <div class="nav-item">
+                <a class="nav-link" routerLink="/home">Inicio</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" routerLink="/profile">Perfil</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link">Materias</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link">Tareas/Examenes
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">Cerrar Sesion
+                </a>
+            </div>
+        </div>
 
-    <div class="d-flex flex-wrap flex-row-reverse">
-        <div class="col-sm-4">
-            <p>
-            <h3>Como funciona?</h3>
-            <p>Busca los hoteles acorde a tu preferencia</p>
-            </p>
+    </div>
+</nav>
+<!--header-->
+<div>
+    <h1 class="jumbotron">Hoteles</h1>
+    <div class="container">
+
+        <div class="d-flex flex-wrap flex-row-reverse">
+            <div class="col-sm-4">
+                <p>
+                <h3>Como funciona?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                <h3>Como funciona?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                <h3>Como funciona?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum</p>
+                </p>
+            </div>
         </div>
-        <div class="col-sm-4">
-            <p>
-            <h3>Como funciona?</h3>
-            <p>Busca los hoteles acorde a tu preferencia</p>
-            </p>
-        </div>
-        <div class="col-sm-4">
-            <p>
-            <h3>Como funciona?</h3>
-            <p>Busca los hoteles acorde a tu preferencia</p>
-            </p>
+        <hr>
+
+        <div class="d-flex flex-wrap">
+            <div class="col-sm-3">
+                <h4>Hotel Santiago</h4>
+                <p>Casa Antigua Hotel está situado en la entrada del Casco Antiguo.
+                    Es un hotel boutique con 7 suites confortables y 2 habitaciones
+                    acogedoras. Todas las habitaciones y suites están equipadas con
+                    cocina, refrigerador, horno de microondas, cafetera, tostadora y
+                    kitchenware.</p>
+                <button class="btn btn-primary">Visitar</button>
+            </div>
+            <div class="col-sm-3">
+                <h4>Hotel 2</h4>
+                <p>Casa Antigua Hotel está situado en la entrada del Casco Antiguo.
+                    Es un hotel boutique con 7 suites confortables y 2 habitaciones
+                    acogedoras. Todas las habitaciones y suites están equipadas con
+                    cocina, refrigerador, horno de microondas, cafetera, tostadora y
+                    kitchenware.</p>
+                <button class="btn btn-primary">Visitar</button>
+            </div>
+            <div class="col-sm-3">
+                <h4>Hard Rock Hotel Panama Megapolis</h4>
+                <p>Descubre por qué tantos viajeros ven Hard Rock Hotel Panama
+                    Megapolis como el hotel ideal cuando visitan Ciudad de Panamá.
+                    Además de aportar la combinación ideal de calidad, comodidad y
+                    ubicación, ofrece un ambiente pintoresco con una amplia variedad
+                    de servicios diseñados para viajeros como tú.</p>
+                <button class="btn btn-primary">Visitar</button>
+            </div>
+            <div class="col-sm-3">
+                <h4>Hotel 3</h4>
+                <p>Casa Antigua Hotel está situado en la entrada del Casco Antiguo.
+                    Es un hotel boutique con 7 suites confortables y 2 habitaciones
+                    acogedoras. Todas las habitaciones y suites están equipadas con
+                    cocina, refrigerador, horno de microondas, cafetera, tostadora y
+                    kitchenware.</p>
+                <button class="btn btn-primary">Visitar</button>
+            </div>
+            <div class="col-sm-3">
+                <h4>Hotel 3</h4>
+                <p>Casa Antigua Hotel está situado en la entrada del Casco Antiguo.
+                    Es un hotel boutique con 7 suites confortables y 2 habitaciones
+                    acogedoras. Todas las habitaciones y suites están equipadas con
+                    cocina, refrigerador, horno de microondas, cafetera, tostadora y
+                    kitchenware.</p>
+                <button class="btn btn-primary">Visitar</button>
+            </div>
+            <div class="col-sm-3">
+                <h4>Hotel 3</h4>
+                <p>Casa Antigua Hotel está situado en la entrada del Casco Antiguo.
+                    Es un hotel boutique con 7 suites confortables y 2 habitaciones
+                    acogedoras. Todas las habitaciones y suites están equipadas con
+                    cocina, refrigerador, horno de microondas, cafetera, tostadora y
+                    kitchenware.</p>
+                <button class="btn btn-primary">Visitar</button>
+            </div>
         </div>
     </div>
     <hr>
+    <footer>
+        <div class="row">
 
-    <div class="d-flex flex-wrap">
-        <div class="col-sm-3">
-            <h4>Hotel Santiago</h4>
-            <p>Casa Antigua Hotel está situado en la entrada del Casco Antiguo.
-                Es un hotel boutique con 7 suites confortables y 2 habitaciones
-                acogedoras. Todas las habitaciones y suites están equipadas con
-                cocina, refrigerador, horno de microondas, cafetera, tostadora y
-                kitchenware.</p>
-            <button class="btn btn-primary">Visitar</button>
+            <div class="col-sm  flex-column">
+                <ul>
+                    <li href="#">Facebook</li>
+                    <li href="#">Instagram</li>
+                    <li href="#">Twitter</li>
+                    <li href="#">Youtube</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4">
+                <address>
+                    &copy; Practica 1 Adonay Ramos Villafuerte
+                    numero de contacto: +591 12345678
+
+                </address>
+            </div>
+            <div class="col-sm-4 align-items-end">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Hoteles</a></li>
+                    <li> <a href="#">Actividades</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-sm-3">
-            <h4>Hotel 2</h4>
-            <p>Montañas, nevados</p>
-            <button class="btn btn-primary">Visitar</button>
-        </div>
-        <div class="col-sm-3">
-            <h4>Hard Rock Hotel Panama Megapolis</h4>
-            <p>Descubre por qué tantos viajeros ven Hard Rock Hotel Panama
-                Megapolis como el hotel ideal cuando visitan Ciudad de Panamá.
-                Además de aportar la combinación ideal de calidad, comodidad y
-                ubicación, ofrece un ambiente pintoresco con una amplia variedad
-                de servicios diseñados para viajeros como tú.</p>
-            <button class="btn btn-primary">Visitar</button>
-        </div>
-        <div class="col-sm-3">
-            <h4>Hotel 3</h4>
-            <p>Rios, senderos</p>
-            <button class="btn btn-primary">Visitar</button>
-        </div>
-        <div class="col-sm-3">
-            <h4>Hotel 3</h4>
-            <p>Rios, senderos</p>
-            <button class="btn btn-primary">Visitar</button>
-        </div>
-        <div class="col-sm-3">
-            <h4>Hotel 3</h4>
-            <p>Rios, senderos</p>
-            <button class="btn btn-primary">Visitar</button>
-        </div>
-    </div>
+    </footer>
 </div>
-<hr>
-<footer>
-    <div class="row">
-
-        <div class="col-md-4 d-flex flex-column">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Youtube</a>
-        </div>
-
-        <div class="col-sm-4">
-            <address>
-                &copy; Practica 1 Adonay Ramos Villafuerte
-                numero de contacto: +591 12345678
-
-            </address>
-        </div>
-        <div class="col-md-4 d-flex flex-column align-items-end">
-            <a href="#">Inicio</a>
-            <a href="#">Hoteles</a>
-            <a href="#">Actividades</a>
-            <a href="#">Contacto</a>
-        </div>
-    </div>
-</footer>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
