@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <!--Estilos CSS-->
     <link rel="stylesheet" href="css/main.css">
     <title>Guia Hoteles</title>
@@ -27,7 +28,7 @@
             <div class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </div>
-            <div class="nav-item">
+            <div class="nav-item active">
                 <a class="nav-link" href="about.html">Nosotros</a>
             </div>
             <div class="nav-item">
@@ -36,13 +37,15 @@
             <div class="nav-item">
                 <a class="nav-link">Terminos y Condiciones</a>
             </div>
-            <div class="nav-item active">
-                <a href="#" class="nav-link">Contacto</a>
+            <div class="nav-item">
+                <a href="/contacto.html" class="nav-link">Contacto</a>
             </div>
         </div>
 
     </div>
 </nav>
+
+
 <!--header-->
 <div>
     <h1 class="jumbotron">Hoteles</h1>
@@ -51,53 +54,61 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item" aria-current="page"><a href="index.html">Hoteles</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#"></a> Contacto</li>
             </ol>
         </nav>
-        <h1>Dejame tu comentario</h1>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-sm-6">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
-                </div>
 
-                <div class="form-group col-sm-6">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apelido">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo">
-            </div>
-
-            <div class="form-row">
-                <div class="form-group col-sm-6">
-                    <label for="Domicilio">Domicilio</label>
-                    <input type="text" class="form-control" id="Domicilio" placeholder="Ingrese su Domicilio">
-                </div>
-
-                <div class="form-group col-sm-6">
-                    <label for="provincia">Provincia</label>
-                    <select id="provincia" class="form-control">
-                        <option selected>Cochabamba</option>
-                        <option>Quillacollo</option>
-                        <option>Sacaba</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group ">
-                <label for="comentario">Comentario</label>
-                <textarea id="comentario" class="form-control" rows="8"></textarea>
-            </div>
-            <div class="form-group col-sm">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label for="gridCheck" class="form-check-label">Quiero que me contacten</label>
-            </div>
-            <button type="submit" class="btn btn-outline-primary">Enviar</button>
-        </form>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                <th>Calidad</th>
+                <th>La Paz</th>
+                <th>Sucre</th>
+                <th>Oruro</th>
+                <th>Santa Cruz</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><span class="oi oi-star"></span></td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>150</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>150</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+                    </td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>150</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                            class="oi oi-star"></span></td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>150</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                            class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>150</td>
+                    <td>180</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
     </div>
     <footer class="jumbotron">
