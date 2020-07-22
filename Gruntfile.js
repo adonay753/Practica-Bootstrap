@@ -47,6 +47,7 @@ module.exports = function (grunt) {
                 }]
             }
         },
+
         copy: {
             html: {
                 files: [{
@@ -54,10 +55,11 @@ module.exports = function (grunt) {
                     dot: true,
                     cwd: './',
                     src: ['*.html'],
-                    dest: 'dist',
+                    dest: 'dist'
                 }]
             },
         },
+
         clean: {
             build: {
                 src: ['dist/']
@@ -79,7 +81,7 @@ module.exports = function (grunt) {
                 files: [{
                     src: [
                         'dist/js/*.js',
-                        'dist/css/*css'
+                        'dist/css/*.css',
                     ]
                 }]
             }
@@ -93,7 +95,7 @@ module.exports = function (grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['index.html, about.html, precios.hml, contacto.html']
+                src: ['index.html', 'about.html', 'precios.hml', 'contacto.html']
             },
             options: {
                 flow: {
@@ -119,7 +121,7 @@ module.exports = function (grunt) {
         usemin: {
             html: ['dist/index.html', 'dist/about.html', 'dist/contacto.html', 'dist/precios.html'],
             options: {
-                assetsDir: ['dir', 'dist/css', 'dist/js']
+                assetsDir: ['dist', 'dist/css', 'dist/js']
             }
         }
     });
@@ -137,6 +139,6 @@ module.exports = function (grunt) {
             'cssmin',
             'uglify',
             'filerev',
-            'usemin'
+            'usemin',
         ])
 };
